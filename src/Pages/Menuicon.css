@@ -1,0 +1,30 @@
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .rotate-up {
+    transform: rotate(45deg) translate(8px, 8px);
+    width: 35px;
+  }
+  
+  .rotate-down {
+    transform: rotate(-45deg) translate(+8px,-8px);
+    width: 35px;
+  }
+  .remove{
+    display: none;
+  }
+  
