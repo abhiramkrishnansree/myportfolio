@@ -13,7 +13,7 @@ const Footer = () => {
         <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><FaLinkedin /></a>
       </div>
       <div className="footer-text">
-        <p><span>Designed and Developed by Abhiram Krishnan</span><br></br>Copyright © 2023 All rights reserved</p>
+        <p><span></span><br></br>Copyright © 2023 All rights reserved</p>
       </div>
       </div>
     </footer>

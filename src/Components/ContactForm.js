@@ -10,9 +10,9 @@ const ContactForm = () => {
 
     emailjs.sendForm('service_d3edc8u', 'template_00oxg9s', form.current, 'jDd1i8aP_dNxx_tQ_')
       .then((result) => {
-          console.log(result.text);
+          alert("Your Message Has been Sent Successfully");
       }, (error) => {
-          console.log(error.text);
+          alert("Your Message Could Not Be Sent");
       });
       e.target.reset()
   };
@@ -26,7 +26,7 @@ const ContactForm = () => {
       </div>
       <div className='pun'>
         <label htmlFor="email">Email:</label>
-        <input name="user_email" placeholder='Eg. example@gmail.com' required/>
+        <input type="email" name="user_email" placeholder='Eg. example@gmail.com' required/>
       </div>
       <div className='pun'>
         <label htmlFor="message">Message:</label>

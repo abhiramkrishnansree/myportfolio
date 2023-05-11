@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
 html{
   scroll-behavior: smooth;
-  background-color: rgb(37, 37, 37);
+  background-color:#00171F;
 }
 * {
   -webkit-tap-highlight-color: transparent;
@@ -79,16 +80,17 @@ html{
   height: 90vh;
   margin-left: 100px;
   position: relative;
-  top: 250px;
+  top: 300px;
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
 .home{
   height:100vh;
-  background-image:
+  /* background-image:
     linear-gradient(to bottom, rgba(179, 255, 0, 0), rgb(0, 0, 0) 60%),
     url('back.jpg');
-    background-size:cover;
+    background-size:cover; */
+    background-image: linear-gradient(to top, #00171F , #003459);
 }
 .title h1{
   font-size: 70px;
@@ -98,7 +100,7 @@ html{
 .title span{
   font-size: 70px;
   font-weight: 600;
-  color: rgb(189, 226, 43);
+  color: #007EA7;
   font-family:Montserrat;
 }
 .title h2{
@@ -118,29 +120,44 @@ html{
   border:none;
   width:100px;
   height: 40px;
-  background-color:rgb(189, 226, 43);
+  background-color:#007EA7;
   margin-right: 10px;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 14px;
   border-radius: 3px;
 }
 .icon{
-  color: black;
+  color:white;
 }
 .details p{
-  padding-top: 20px;
-  font-family:Montserrat;
+  padding-top: 0px;
+  font-family: Inter;
 }
 .details{
-  color: white;
+  color: rgb(255, 255, 255);
   position: relative;
   top: 100px;
   width: 700px;
   height: 70vh;
-  text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.highlight{
+  color: #007EA7;
+  font-weight: 500;
+}
+.highlight a{
+  text-decoration: none;
+  color: #007EA7;
+}
+.highlight:hover{
+  text-decoration-line:underline;
+}
+.details h1{
+  color: #007EA7;
+  font-weight: 600;
+  font-size: 30px;
 }
 #about{
   padding-left: 100px;
@@ -149,15 +166,15 @@ html{
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  background-color:black;
+  background-color:#00171F;
 }
 .photo img{
+  border-radius:5px;
   width:350px;
   background-size: cover;
   position: relative;
   margin-top: 100px;
   height: auto;
-  border-radius: 5px;
 }
 .skills{
   display: grid;
@@ -166,7 +183,7 @@ html{
   gap: 10px;
 }
 .skill-box{
-  background-color: rgb(189, 226, 43);
+  background-color: #007EA7;
   width:130px;
   display:flex;
   justify-content: center;
@@ -182,7 +199,15 @@ html{
 .don{
   text-decoration: none;
 }
-
+.skill-head{
+  font-weight:600;
+  font-size: 20px;
+  padding:20px;
+  padding-left: 0px;
+}
+.sidebar{
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   #hide{
     display:none;
@@ -192,7 +217,7 @@ html{
     display:flex;
     height: 28vh;
     width: 100%;
-    background-color: transparent;
+    background-color:rgba(0, 0, 0, 0.077);
     flex-direction:column;
     text-align: center;
   }
@@ -215,10 +240,10 @@ html{
     height: 40vh;
     margin-left: 20px;
     position: relative;
-    top: 300px;
+    top: 250px;
   }
   .title h1{
-    font-size:35px;
+    font-size:20px;
     font-weight: 450;
   }
   .title h2{
@@ -234,6 +259,8 @@ html{
     display:block;
     justify-content: center;
     justify-content:space-between;
+    padding-bottom: 100px;
+    
   }
   
   .details{
@@ -243,16 +270,29 @@ html{
   }
   .details p{
     font-size: 15px;
+    padding-top: 20px;
   }
   .details{
     height: 250;
   }
   .skills{
-    padding-top: 50px;
+    padding-top: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 20px;
+  }
+  .skill-box{
+      background-color: #007EA7;
+      color: rgb(255, 255, 255);
+      width:100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      font-size:13px;
+      font-weight: 500;
+      border-radius:3px;
   }
   #about{
     margin-top: 0px;
@@ -264,8 +304,55 @@ html{
   }
   .photo img{
     padding-top: 0px;
-    width: 320px;
+    width:100%;
     margin-right: auto;
     margin-left: auto;
   }
+  .menu a:hover{
+    background-color: #00a9e13a;
+    color: #ffffff;
+  }
+  .sidebar {
+    width: 30px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #00b1ec7a;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 35%;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 5px 0px 0px 5px;
+    
+  }
+  
+  .sidebar a {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    color: #000;
+  }
+}
+
+
+
+/* Hpvering baaar */
+button:hover{
+  background-color: #00A7E1;
+}
+.skill-box:hover{
+  background-color: #00A7E1;
+}
+.menu a:hover{
+  color: #00A7E1;
+  font-weight: 400;
 }
